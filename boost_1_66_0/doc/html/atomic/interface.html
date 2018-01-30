@@ -1079,6 +1079,20 @@
 </tr>
 </tbody>
 </table></div>
+<div class="note"><table border="0" summary="Note">
+<tr>
+<td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="../../../../../doc/src/images/note.png"></td>
+<th align="left">Note</th>
+</tr>
+<tr><td align="left" valign="top"><p>
+            In Boost.Atomic 1.67 and later the <code class="literal"><span class="emphasis"><em>op</em></span>_and_test</code>
+            operations will return the opposite value (i.e. <code class="computeroutput"><span class="keyword">true</span></code>
+            if the result is non-zero). This was changed for consistency with other
+            operations in Boost.Atomic, as well as with conventions taken in the
+            C++ standard library. Users may prefer to postpone using these operations
+            until Boost 1.67 to avoid the need to update the code after the upgrade.
+          </p></td></tr>
+</table></div>
 <p>
           <code class="computeroutput"><span class="identifier">order</span></code> always has <code class="computeroutput"><span class="identifier">memory_order_seq_cst</span></code> as default parameter.
         </p>
